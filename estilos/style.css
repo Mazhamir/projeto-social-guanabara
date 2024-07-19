@@ -61,5 +61,7 @@ section#redes-sociais img{
 section#redes-sociais img:hover{
   border:  2px solid rgba(255, 255, 255, 0.637);
   transform: translate( 10px, 10px);
-
+  /* transform: faz a imagem se mover em x e y*/
+  /* translate (X ( - left) (+ right), Y (- top) (+ bottom)) */
+  
 }
