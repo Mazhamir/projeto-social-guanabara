@@ -14,57 +14,61 @@ html , body{
 
 body{
   background: url('../imagens/fundo-madeira.jpg') no-repeat top left;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: cover; /* cover vai cobrir toda a tela */
+  background-attachment: fixed; /* fixa a imagem */
 }
 
 main{
   /* container de fora */
-  height: 100vh; /* 100vh significa que o elemento <main>terá a mesma altura da janela do navegador.*/
+  height: 100vh; /* 100vh significa que o elemento <main> terá a mesma altura da janela do navegador.*/
   position: relative;
 }
 
 section#telefone{
-  /* container de dentro */
+  /* container de dentro em relação com o elemento <main> */
+  /* Centralizar o telefone */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%); 
 
+  /* Dimencionar largura e altura do telefone */
   height: 627px;
   width: 311px;
   background: url('../imagens/frame-iphone.png') no-repeat;
-
 }
 
 iframe#tela{
+  /* Centralizar o iframe */
   position: relative;
   top: 80px;
   left: 22px;
+  /* Dimencionar largura e altura do iframe */
   width: 269px;
   height: 471px;
 }
 
 section#redes-sociais{ 
-  text-align: right;
+  text-align: right; /* alinha o texto a direita */
 }
 
-section#redes-sociais img{
+section#redes-sociais img{ 
   width: 50px;
   height: 50px;
   margin: 10px;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
-  box-sizing: border-box; /* a bordas vai fazer parte da caixa e uma não afeta a outra do lado */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400); 
+  box-sizing: border-box; /* faz com que o padding e o border fiquem dentro do tamanho do elemento */
 }
 
-section#redes-sociais img:hover{
+section#redes-sociais img:hover{ 
+  /* quando passar o mouse em cima da imagem */
   border:  2px solid rgba(255, 255, 255, 0.637);
-  transform: translate( -3px, -3px);
+  transform: translate( -3px, -3px); 
   /* transform: faz a imagem se mover em x e y*/
   /* translate (X ( - left) (+ right), Y (- top) (+ bottom)) */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-  transition: transform .3s, border 4s; 
+  transition: transform .3s, border 4s; /* tempo de transição e tempo de animação*/
   
 }
 
